@@ -47,6 +47,14 @@ h1{
     display: inline-block;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
 .vies {
     margin: 10px;
 }
@@ -107,4 +115,24 @@ p#message {
     font-weight: bold;
     font-size: 14px;
     margin-top: 5px;
+}
+
+
+/* Confettis */
+
+.slot {
+    position: relative;
+    perspective: 1000px;
+    z-index: 10;
+}
+
+.slot div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    user-select: none;
 }
